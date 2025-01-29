@@ -25,7 +25,7 @@
     <main>
         <div class="welcome">
             <h1><b>&#x1F31E Seja Bem-Vindo &#x1F324&#xFE0F</b></h1>
-            <P>Busque a cidade que você deseja e confira o clima atual</P>
+            <P>Busque a cidade que deseja e confira o clima atual</P>
         </div>
         <div class="suggestions">
             <button id="brasilia">Brasília</button>
@@ -38,7 +38,7 @@
             <button id="camberra">Camberra</button>
         </div>
 
-        <div class="city-informations">
+        <div class="city-informations" id="hidden">
             <h1>
                 <i class="fa-solid fa-location-dot"></i>
                 <span id="city"></span>
@@ -46,28 +46,28 @@
             </h1>
         </div>
 
-        <div class="weather-data">
+        <div class="weather-data" id="hidden">
             <h2 id="temperature"><span></span>&deg;C</h2>
             <div class="weather-description">
-                <img id="weather-icon" src="" alt="Icone representativo da condição">
-                <p class="description"></p>
+                <img id="weather-icon" src="" alt="Ícone representativo da condição">
+                <p id="description"></p>
             </div>
             <div class="weather-details">
-                <p class="humidity">
+                <p id="humidity">
                     <i class="fa-solid fa-droplet"></i>
                     <span></span>
                 </p>
-                <p class="wind">
+                <p id="wind">
                     <i class="fa-solid fa-wind"></i>
                     <span></span>
                 </p>
             </div>
         </div>
         
-        <div class="error-message">
+        <div class="error-message" id="hidden">
             <p>&#x274C Não foi possível encontrar o clima de uma cidade com este nome</p>
         </div>
-        <div class="loader">
+        <div class="loader" id="hidden">
             <i class="fa-solid fa-spinner"></i>
         </div>
     </main>
