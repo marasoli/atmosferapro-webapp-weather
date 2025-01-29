@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo Exato!</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/tempoexato-logo-white.png" alt="Logo do site Tempo Exato">
+        </div>
+        <div class="search-bar">
+            <input id="search-input" type="text" placeholder="Digite o nome da cidade...">
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="welcome">
+            <h1><b>&#x1F31E Seja Bem-Vindo &#x1F324&#xFE0F</b></h1>
+            <P>Busque a cidade que você deseja e confira o clima atual</P>
+        </div>
+        <div class="suggestions">
+            <button id="brasilia">Brasília</button>
+            <button id="sao paulo">São Paulo</button>
+            <button id="curitiba">Curitiba</button>
+            <button id="joao pessoa">João Pessoa</button>
+            <button id="buenos aires">Buenos Aires</button>
+            <button id="lisboa">Lisboa</button>
+            <button id="toquio">Tóquio</button>
+            <button id="camberra">Camberra</button>
+        </div>
+
+        <div class="city-informations">
+            <h1>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city"></span>
+                <img id="country" src="" alt="Bandeira do país da pesquisa">
+            </h1>
+        </div>
+
+        <div class="weather-data">
+            <h2 id="temperature"><span></span>&deg;C</h2>
+            <div class="weather-description">
+                <img id="weather-icon" src="" alt="Icone representativo da condição">
+                <p class="description"></p>
+            </div>
+            <div class="weather-details">
+                <p class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+                <p class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="error-message">
+            <p>&#x274C Não foi possível encontrar o clima de uma cidade com este nome</p>
+        </div>
+        <div class="loader">
+            <i class="fa-solid fa-spinner"></i>
+        </div>
+    </main>
+</body>
+</html>
