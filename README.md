@@ -31,5 +31,6 @@ Antes de começar, certifique-se de:
 
 ## 🖼️ Capturas de Tela
 ### 📌 Exemplo de como o site aparece em excução.
-<img width="600" alt="Página inicial" src=""/>
-<img width="600" alt="Resultado da pesquisa" src=""/>
+- Tela inicial: <br><br> <img width="600" alt="Página inicial" src="https://github.com/user-attachments/assets/97eb3239-9a74-4483-97f8-7c983ad482a5"/>
+<br><br>
+- Resultado da pesquisa: <br><br> <img width="600" alt="Resultado da pesquisa" src="https://github.com/user-attachments/assets/4434c989-c5f6-403a-9963-6d3173edde73"/>
