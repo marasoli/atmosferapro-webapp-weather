@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/assets/unsplash-bg-sara.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    margin-top: 10rem; /*no-responsiveness*/
+    backdrop-filter: blur(3px);
+}
+
+/* div first */
+.first {
+    background-color: #ace0e96b;
+    width: 800px;
+    height: 400px;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 253px;
+}
+
+#clock {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#temperature {
+    display: flex;
+    justify-content: center;
+    width: 253px;
+}
+
+#temperature h2 {
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 253px;
+}
+
+#search-ipt {
+    background: none;
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#search-btn {
+    background: #26A3B9;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: end;
+    height: 280px;
+}
+
+#humidity, #weather, #wind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 253px;
+}
+
+#humidity, #wind {
+    font-size: 25px;
+}
+
+#weather span {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#weather img {
+    width: 100px;
+}
+
+/* div second */
+.second {
+    background-color: #ace0e99f;
+    width: 800px;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel {
+    width: 200px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#loader {
+    display: flex;
+    justify-content: center;
+}
+
+#loader .fa-sun {
+    font-size: 50px;
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#error-msg {
+    color: brown;
+    font-size: 20px;
+}
+
+.days span {
+    margin: 10px;
+}
+
+.days span.active {
+    margin: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+}

@@ -1,3 +1,6 @@
 .env
-node_modules/
 .vscode/
+node_modules/
+legacy-versions/
+markdown/
+mock.html
